@@ -1,0 +1,275 @@
+/*FUENTE ELEGIDA*/
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*RESETEO*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/********************* APLICANDO GRID A LAS AREAS DE MI SITIO*******************************/
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    "primera primera primera primera"
+    "barra barra barra barra"
+    "seccionA seccionA seccionA seccionB"
+    "pie pie pie pie";
+
+}
+
+.primera {
+    display: flex;
+    align-items: flex-start;
+    grid-area: primera;
+}
+
+/*Tamaño y posición del logo*/
+.logo {
+    width: 64px;
+    margin-left: 10%;
+    margin-top: 15%
+}
+
+h1 {
+    
+    font-family:'Permanent Marker', cursive;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    margin-left: 3%;
+    margin-top: 0.8%;
+}
+
+/*Estilo y posicionamiento de menú*/
+
+.menu {
+    background-color: darkblue;
+    grid-area: barra;
+    flex-wrap: wrap;
+}
+
+.barra {
+    display: flex;
+    list-style-type: none;
+    word-spacing: 3px;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+    
+}
+
+.barra li {
+
+    font-weight: bold;
+    font-size: x-large;
+    flex-direction: row;
+    
+}
+
+.barra li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    color: white;
+
+}
+
+.barra li :hover {
+    background-color: red;
+    transition: background-color 1s;
+}
+
+
+.sectionA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: seccionA;
+}
+
+.sectionB {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: seccionB;
+    background-color: red;
+    border: 2px darkblue solid;
+    margin: 0;
+    padding: 0;
+}
+
+.direccion {
+    color: white;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+}
+
+.mapa {
+    margin: 0;
+    padding: 0;
+}
+
+.subtituloB {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+
+.principal {
+  
+    background-color: rgb(230, 230, 230);
+}
+
+.text {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+}
+
+/*Fuente de la clase "subtitulo"*/
+.subtitulo {
+    font-family: 'Anton', sans-serif;
+    
+}
+
+/*FOOTER*/
+
+.derechos {
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: pie;
+}
+
+.infoPie {
+    font-family:  'Anton', sans-serif;
+    color: white;
+    padding: 1%;
+    border: 2px white solid;
+}
+
+.copyR {
+    font-family:  'Anton', sans-serif;
+    color: white;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    
+}
+
+.redes li a {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    padding: 0;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+/***** PLANTEL *****/
+
+.subA {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5vw;
+    color: red;
+    margin-left: 2%;
+}
+
+.subB {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+    color: darkblue;
+    margin-left: 2%;
+    
+}
+
+.subC {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin-left: 2%;
+    color: red;
+}
+.plantel {
+    display: grid;
+}
+
+.arqueros {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player {
+    margin: 2%;
+}
+
+.player img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    
+}
+
+.namePlayer {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    color: darkblue;
+}
+
+.defensores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/****************** FIXTURE***********************/
+
+.fixture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px rgb(211, 211, 211) solid;
+    
+}
+
+.padreFix {
+    display: flex;
+    justify-content: center;
+}
+
+
+.escudoFix {
+    flex-direction: row;
+    width: 70px;
+
+}
+
+.oneMatch {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+.versus {
+
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    margin-left: 70px;
+    margin-right: 70px;
+
+}
+
+.nameFix {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
