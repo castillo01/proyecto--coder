@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap');
 
 /*RESETEO*/
 * {
@@ -9,267 +11,179 @@
     padding: 0;
 }
 
-/********************* APLICANDO GRID A LAS AREAS DE MI SITIO*******************************/
-
-.contenedor {
-    display: grid;
-    grid-template-areas: 
-    "primera primera primera primera"
-    "barra barra barra barra"
-    "seccionA seccionA seccionA seccionB"
-    "pie pie pie pie";
-
-}
-
-.primera {
-    display: flex;
-    align-items: flex-start;
-    grid-area: primera;
-}
-
-/*Tamaño y posición del logo*/
-.logo {
-    width: 64px;
-    margin-left: 10%;
-    margin-top: 15%
-}
-
-h1 {
-    
-    font-family:'Permanent Marker', cursive;
-    font-weight: bold;
-    color: black;
-    font-size: 30px;
-    margin-left: 3%;
-    margin-top: 0.8%;
-}
-
-/*Estilo y posicionamiento de menú*/
-
-.menu {
-    background-color: darkblue;
-    grid-area: barra;
-    flex-wrap: wrap;
-}
-
-.barra {
-    display: flex;
-    list-style-type: none;
-    word-spacing: 3px;
-    justify-content: space-around;
-    align-items: flex-start;
-    
-    
-}
-
-.barra li {
-
-    font-weight: bold;
-    font-size: x-large;
-    flex-direction: row;
-    
-}
-
-.barra li a {
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Anton', sans-serif;
-    color: white;
-
-}
-
-.barra li :hover {
-    background-color: red;
-    transition: background-color 1s;
-}
-
-
-.sectionA {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: seccionA;
-}
-
-.sectionB {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    grid-area: seccionB;
-    background-color: red;
-    border: 2px darkblue solid;
-    margin: 0;
-    padding: 0;
-}
-
-.direccion {
-    color: white;
-    font-size: 15px;
-    font-family: 'Anton', sans-serif;
-}
-
-.mapa {
-    margin: 0;
-    padding: 0;
-}
-
-.subtituloB {
-    color: white;
-    font-family: 'Anton', sans-serif;
-    
-}
-
-
-.principal {
-  
-    background-color: rgb(230, 230, 230);
-}
-
-.text {
-    font-family: 'Anton', sans-serif;
-    font-size: 20px;
-}
-
-/*Fuente de la clase "subtitulo"*/
-.subtitulo {
-    font-family: 'Anton', sans-serif;
-    
-}
-
-/*FOOTER*/
-
-.derechos {
-    background-color: darkblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: pie;
-}
-
-.infoPie {
-    font-family:  'Anton', sans-serif;
-    color: white;
-    padding: 1%;
-    border: 2px white solid;
-}
-
-.copyR {
-    font-family:  'Anton', sans-serif;
-    color: white;
-}
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    
-}
-
-.redes li a {
-    text-decoration: none;
-    font-family: 'Anton', sans-serif;
-    padding: 0;
-    margin: 20px;
-    color: white;
-    font-size: 20px;
+html {
+    font-size: 62,5;
 }
 
 /***** PLANTEL *****/
 
 .subA {
     font-family: 'Anton', sans-serif;
-    font-size: 1.5vw;
+    text-transform: uppercase;
     color: red;
-    margin-left: 2%;
 }
 
 .subB {
     font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    font-size: 3vw;
     color: darkblue;
-    margin-left: 2%;
-    
+    text-transform: uppercase;
 }
 
 .subC {
     font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    font-size: 2vw;
-    margin-left: 2%;
     color: red;
-}
-.plantel {
-    display: grid;
-}
-
-.arqueros {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.player {
-    margin: 2%;
-}
-
-.player img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    
-}
-
-.namePlayer {
-    text-align: center;
     text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
+}
+
+.img-fluid {
+    width: 200px;
+    display: inline;
+
+}
+
+/***********  ESTILO DE LA BARRA DE NAVEGACION Y DEL MENU DE HAMBURGUESA      **************/
+.navbar-brand {
+    font-family: 'Fredoka One', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar-brand :hover {
+    background-color: red;
+    transition: background-color 1s;
     color: darkblue;
 }
 
-.defensores {
-    display: flex;
-    flex-wrap: wrap;
+
+
+.navegation :hover {
+    background-color: red;
+    transition: background-color 1s;
+    color: darkblue;
 }
 
-/****************** FIXTURE***********************/
 
-.fixture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-top: 2px rgb(211, 211, 211) solid;
-    
+.nav-link {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    color: white;
 }
 
-.padreFix {
-    display: flex;
-    justify-content: center;
+.navbar {
+    background-color: darkblue;
 }
 
+/**************  ESTILO DEL FOOTER     ********************/
+
+.pie {
+    background-color: darkblue;
+}
+
+.redes {
+    width: 30px;
+}
+
+.text-pie {
+    color: white;
+}
+
+.btn-outline-success {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    border: none;
+    background: none;
+}
+
+.btn-outline-success:hover {
+    color: red;
+    transition: background-color 1s;
+}
+
+.navbar-toggler {
+    background-color: none;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/cuervo.png);
+    color: red;
+    border: none;
+    background-color: none;
+}
+
+/*********** ESTILO DE FIXTURE(INCOMPLETO)   *********************/
+
+.cronogram {
+    margin: 0;
+    padding: 0;
+}
 
 .escudoFix {
-    flex-direction: row;
-    width: 70px;
+    width: 40px;
 
 }
 
-.oneMatch {
-    font-family: 'Anton', sans-serif;
-    text-align: center;
+/*********** CONTACTO.HTML = ESTILO DEL FORMULARIO ****************/
+
+.ms-5 {
+    font-family: 'Fredoka One', cursive;
+    color: darkblue;
 }
 
-.versus {
+.cajaTexto {
+    width: 15px;
+}
 
-    font-family: 'Anton', sans-serif;
-    font-size: 2rem;
-    margin-left: 70px;
-    margin-right: 70px;
+input {
+    display: inline-block;
+}
+
+label {
+    display: inline-block
+}
+
+.botonIcono {
+    width: 4rem;
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    border: none;
+}
+
+.botonIcono:hover {
+    background-color: red;
+    color: blue;
+    width: 3.8rem;
+    transition: all 0.5s;
+}
+
+
+.borrarBoton {
+    width: 2.5rem;
 
 }
 
-.nameFix {
-    font-family: 'Anton', sans-serif;
-    text-align: center;
+.encabezadoContact {
+    font-size: 1.2rem;
 }
 
+.formularioCuervo {
+    border: grey solid 2px;
+}
+
+/***********    MD PARA QUITAR MAPA DEL MAIN, PARA HACERLO RESPONSIVE.        **********************/
+@media (max-width:768px) {
+    .mapa {
+        display: none;
+    }
+
+    .formulario {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cuadroTexto {
+        width: 100%;
+    }
+}

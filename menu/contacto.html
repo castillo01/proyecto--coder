@@ -5,99 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>¿Qué es Sentimiento Azulgrana?</title>
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- CSS-->
     <link rel="stylesheet" href="../css/estilo.css">
+    <!-- LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- LINK ICONO DE BUSQUEDA-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
-<body>
-    <header class="primera">
-            <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="logo de san lorenzo"></a>
-            
-            <h1 class="encabezado">Sentimiento Azulgrana</h1>
-    </header>
-    <section class="menu">
-        <nav>
-            <ul class="barra">
-                <li  class="itemsListas"><a href="../index.html">Inicio</a></li>
-                <li class="itemsListas"><a href="historia.html">Historia</a></li>
-                <li class="itemsListas"><a href="plantel.html">Plantel</a></li>
-                <li class="itemsListas"><a href="fixture.html">Fixture</a></li>
-                <li class="itemsListas"><a href="contacto.html">Contacto</a></li>
-                <li class="itemsListas"><a href="#pie">Redes sociales del club</a></li>
-            </ul>
-        </nav>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Sentimiento Azulgrana</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item navegation">
+                        <a class="nav-link" aria-current="page" href="historia.html">Historia del club</a>
+                    </li>
+                    <li class="nav-item navegation">
+                        <a class="nav-link navegation" href="plantel.html">Plantel profesional</a>
+                    </li>
+                    <li class="nav-item navegation">
+                        <a class="nav-link" href="fixture.html">Fixture</a>
+                    </li>
+
+                    <li class="nav-item navegation">
+                        <a class="nav-link" href="contacto.html">¿Qúe es Sentimiento Azulgrana?</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="¿Qué estas buscando?"
+                        aria-label="Search">
+                    <button class="btn-outline-success" type="submit"><span class="material-symbols-outlined">
+                            search
+                        </span></button>
+                </form>
+            </div>
+    </nav>
+    <!-- SECCIONES PRINCIPALES DE INFORMACIÓN -->
+
+    <!-- SECCION A: TEXTO INFORMATIVO -->
+    <section data-aos="fade-down"
+        class="text-center encabezado container-fluid">
+        <h2 class="encabezadoContact">¿Qué es Sentimiento Azulgrana?</h2>
+        <p class="text-center">Este sitio web nació como un proyecto para coderhouse, con la idea de que algo que se
+            hace con pasión y compromiso, nunca sale mal.</p>
+        <p>Desde Sentimiento azulgrana nos gustaría que nos des tu opinión sobre nuestro sitio</p>
+        </h4>
+    </section>
+
+    <!-- SECCION B: FORMULARIO DE CONTACTO -->
+    <main data-aos="zoom-out-up" class="mt-5 mb-3 ms-0 me-0 p-0 container-fluid row d-flex formularioCuervo">
+        <section class="container-fluid formulario mt-5  d-flex flex-colum col-xl-6 col-md-6 col-sm-12 col-12 ">
+            <form class="col-xl-6 col-md-12">
+                <div class="d-flex flex-colum">
+                    <label class="me-2">Nombre</label>
+                    <input class="mb-2 form-control-sm" type="text" placeholder="Ejemplo: Juan">
+                </div>
+                <div class="d-flex flex-colum">
+                    <label class="me-2">Apellido</label>
+                    <input class="mb-2 form-control-sm " type="text" placeholder="Ejemplo: Perez">
+                </div>
+                <div class="d-flex flex-colum text-center">
+                    <textarea class="cuadroTexto form-control-sm" placeholder="Deje su mensaje" name="" id="" cols="80"
+                        rows="10"></textarea>
+                </div>
+                <button class="botonIcono mt-2 mb-2" type="submit">Enviar</button>
+                <button class="botonIcono mt-2 ms-2 mb-2" type="reset">Borrar</button>
+            </form>
         </section>
-    <main class="principal">
-        <section class="parrafoinformativoUno">
 
-            <h2 class="subtitulo">¿Qué es el Club Atlético San Lorenzo de Almagro?</h2>
-            <p class="text"><br> El Club Atlético San Lorenzo de Almagro, mayormente conocido como San Lorenzo de
-                Almagro o simplemente
-                San
-                Lorenzo, es una entidad deportiva argentina con sede en el barrio de Boedo, Buenos Aires. Fue fundado el
-                1
-                de abril de 1908 por iniciativa de un grupo de jóvenes con la colaboración del sacerdote salesiano R.P.
-                Lorenzo Massa. Su principal actividad es el fútbol masculino y femenino, donde participa en la Liga
-                Profesional de Fútbol Argentino y en la Copa Argentina. También se practica futsal, básquet, balonmano,
-                natación, atletismo, hockey, rugby y vóley, entre otras disciplinas deportivas. Es un club que se
-                destaca
-                además del fútbol por tener varios campeones olímpicos como Delfo Cabrera. Está incorporado al sistema
-                educativo con un jardín de infantes y un próximo colegio secundario.</p>
-
-            <p class="text">Es considerado como uno de los cinco grandes del fútbol argentino a partir del momento en
-                que la AFA dispuso
-                la implementación del llamado «voto proporcional» en 1937, que consistía en darle mayor poder de
-                decisión a
-                aquellos clubes con mayor número de socios, antigüedad y títulos.</p>
-            <p class="text">San Lorenzo de Almagro obtuvo 22 títulos, en el medio local 15 son campeonatos de Primera
-                División,6​ 2 copas
-                nacionales7​ y en el medio internacional ha alzado 5 títulos donde 3 son en el ámbito confederativo e
-                interconfederativo (CONMEBOL/FIFA) y 2 en el ámbito rioplatense (AFA/AUF). Es el cuarto equipo más
-                ganador
-                del profesionalismo (17 títulos)8​ y también es el tercer mejor equipo de la historia de la Primera
-                División
-                de Argentina, según la clasificación histórica.</p>
-
+        <section class="mt-5 mapa text-center col-xl-6 col-md-6 col-sm-6">
+            <span>
+                <h5>¿Dónde se encuentra el club Atletico San Lorenzo de Almagro?</h5>
+            </span>
+            <div><iframe class="img-fluid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2188.045408100696!2d-58.44004495895223!3d-34.650829354221855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbf80977ed5%3A0xb7eedcbe4a3ab64e!2sEstadio%20Pedro%20Bidegain!5e0!3m2!1ses-419!2sar!4v1675222136226!5m2!1ses-419!2sar"
+                    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </section>
-        <section class="parrafoinformativo">
-            <h2 class="subtitulo">Gloriosa, escuela de tablones</h2>
-            <p class="text">La Gloriosa es el nombre que recibe la hinchada del club en su totalidad (sumado a La
-                Butteler ,
-                como se
-                denomina a su barrabrava). La Gloriosa es conocida como una de las hinchadas más creativas del mundo,
-                debido
-                a que decenas de cánticos tradicionales del fútbol argentino, usualmente inventados por diversas
-                hinchadas a
-                la hora de alentar a sus respectivos equipos en el juego, nacieron de la creatividad e imaginación de
-                los
-                integrantes de esta hinchada, y se extendieron a todo el país y, en numerosas ocasiones, al ámbito
-                internacional.​Un gran logro de originalidad fue musicalizar el tema " Despacito" de Luis
-                Fonsi que generó un furor en su implementación en las gradas de fútbol mundial​ y fue reconocido por el
-                cantante Luis Fonsi.Otros logros de originalidad de San Lorenzo han sido musicalizar temas varios en
-                ritmos como en épocas, temas musicales como Porque te vas de Jeanette, Mirala que linda viene de Ignacio
-                Piñeiro, Let the sunshine in de The 5th Dimension, It's a Heartache de Bonnie Tyler, La luna y el toro
-                de
-                Carlos Castellano Gómez, Bad moon rising de Creedence Clearwater Revival y Duele el corazón de Enrique
-                Iglesias​</p>
 
-        </section>
 
     </main>
-   
-    
-    <footer class="derechos" id="pie">
-        <h2 class="infoPie uno">Proyecto iniciado por Gonzalo Castillo</h2>
-        <h2 class="infoPie dos">Derechos reservados... a mi :)</h2>
-        <h3 class="infoPie tres">Redes oficiales del club</h3>
-        <nav>
-            <ul class="redes">
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="https://twitter.com/sanlorenzo" target="_blank">Twitter</a></li>
-                <li><a href="">Youtube</a></li>
-            </ul>
-        </nav>
+    <footer class="pie">
+        <h3 class="text-center text-pie">Redes oficiales del club</h3>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/SanLorenzo" target="_blank"><img
+                        class="img-fluid redes" src="../img/facebook.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/sanlorenzo" target="_blank"><img class="img-fluid redes"
+                        src="../img/instagram.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/sanlorenzo" target="_blank"><img class="img-fluid redes"
+                        src="../img/gorjeo.png" alt=""></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="https://youtube.com/sanlorenzo" target="_blank"><img class="img-fluid redes"
+                        src="../img/youtube.png" alt=""></a>
+            </li>
+        </ul>
+
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
