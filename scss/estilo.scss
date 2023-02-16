@@ -1,0 +1,295 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap');
+
+
+.padreNav {
+    background-color: darkblue;
+
+    .padreDiv {
+        .navbar-brand {
+            font-family: 'Fredoka One', cursive;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+
+            &:hover {
+                background-color: $colorA;
+                transition: background-color 1s;
+                color: $colorB;
+            }
+        }
+
+        .botonCuervo {
+            background-color: none;
+            border: none;
+        }
+
+        .logoCuervo {
+            background-image: url(../img/cuervo.png);
+            color: $colorA;
+            border: none;
+            background-color: none;
+        }
+
+        .hijoDiv {
+            .navegation {
+                font-family: 'Anton', sans-serif;
+                text-transform: uppercase;
+                color: white;
+
+                &:hover {
+                    background-color: $colorA;
+                    transition: background-color 1s;
+                    color: $colorB;
+                }
+            }
+
+            .iconoBusqueda {
+                color: white;
+                font-family: 'Anton', sans-serif;
+                border: none;
+                background: none;
+
+                &:hover {
+                    color: $colorA;
+                    transition: background-color 1s;
+                }
+            }
+        }
+
+    }
+}
+
+/*MAIN INDEX*/
+
+.informacionBlock {
+    .seccionA {
+        .tituloPrincipal {
+            color: $colorA;
+            font-family: "Anton", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .subtituloB {
+            color: $colorB;
+            font-family: "Anton", sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    .seccionB {
+        .subtituloB {
+            color: $colorB;
+            font-family: 'Anton', sans-serif;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.tablaIndex {
+    .theadIndex {
+
+        tr {
+
+            .th-borde-index {
+                border: 2px solid rgb(206, 206, 206);
+                background-color: rgb(187, 187, 187);
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            border: 2px solid rgb(206, 206, 206);
+
+            .td-borde-index {
+                border: 2px solid rgb(206, 206, 206);
+
+                .fixToday {
+                    width: 50px;
+                }
+
+            }
+
+            .logoTabla {
+                width: 20px;
+            }
+
+            .tablaName {
+                border-bottom: 2px solid rgb(206, 206, 206);
+            }
+        }
+    }
+}
+
+/*PLANTEL*/
+
+.bloquePrincipal {
+    .subtituloA {
+        color: $colorA;
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .subtituloB {
+        color: $colorB;
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .subtituloC {
+        color: $colorA;
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .arqueros {
+        .player {
+            .fotoPlayer {
+                width: 15rem;
+            }
+
+            .namePlayer {
+                font-family: 'Anton', sans-serif;
+                font-size: 1.2rem;
+                color: $colorB;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .defensores {
+        .player {
+            .fotoPlayer {
+                width: 15rem;
+            }
+
+            .namePlayer {
+                font-family: 'Anton', sans-serif;
+                font-size: 1.2rem;
+                color: $colorB;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+/*FIXTURE*/
+
+.bloquePrincipal {
+    .tablaFixture {
+        .theadFixture {
+            .trhFixture {
+                background-color: rgb(219, 219, 219);
+                border: 0.2rem rgb(231, 231, 231) solid;
+            }
+
+            .th-borde-fixture {
+                border: 0.2rem rgb(231, 231, 231) solid;
+            }
+        }
+
+        .tbodyFixture {
+            .escudoChico {
+                width: 1.2rem;
+            }
+
+            .trFixture {
+                border: 0.2rem rgb(231, 231, 231) solid;
+            }
+
+            .td-borde-fixture {
+                border: 0.2rem rgb(231, 231, 231) solid;
+            }
+        }
+    }
+}
+
+
+
+/*HISTORIA DEL CLUB*/
+
+.informacionBlock {
+    .subtituloA {
+        color: $colorB;
+    }
+
+    .subtituloB {
+        color: $colorA;
+    }
+
+    .subtituloD {
+        color: $colorB;
+    }
+}
+
+/*CONTACTO*/
+
+.formularioCuervo {
+    border: 0.5rem solid darkblue;
+
+    .seccionFormulario {
+        .botonIcono {
+            width: 4rem;
+            text-decoration: none;
+            color: white;
+            background-color: darkblue;
+            border: none;
+            transform: scale(1);
+            transition: transform 0.2s;
+
+                &:active {
+                transform: scale(0.9);
+
+                &:hover {
+                    background-color: red;
+                    color: blue;
+                    transition: all 0.5s;
+
+                }
+            }
+        }
+    }
+}
+
+/*FOOTER*/
+
+.pie {
+    background-color: $colorB;
+
+    h3 {
+        color: white;
+    }
+
+    .navRedes {
+        .itemRedes {
+            .logoRedes {
+                width: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width:$medium){
+    .item {
+        display: none;
+    }
+    .itemDos {
+        display: none;
+    }
+   .mapa {
+    display: none;
+   }
+}
+
+@media (max-width:$small) {
+    .itemTres {
+        display: none;
+    }
+}
+
+

@@ -20,121 +20,130 @@
 
 <body class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Sentimiento Azulgrana</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item navegation">
-                        <a class="nav-link" aria-current="page" href="historia.html">Historia del club</a>
-                    </li>
-                    <li class="nav-item navegation">
-                        <a class="nav-link navegation" href="plantel.html">Plantel profesional</a>
-                    </li>
-                    <li class="nav-item navegation">
-                        <a class="nav-link" href="fixture.html">Fixture</a>
-                    </li>
+    <header>
+        <nav class="navbar navbar-expand-lg padreNav">
+            <div class="container-fluid padreDiv ">
+                <a class="sentimiento-boton navbar-brand" href="../index.html">Sentimiento Azulgrana</a>
+                <button class="navbar-toggler botonCuervo" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon logoCuervo"></span>
+                </button>
+                <div class="collapse navbar-collapse hijoDiv" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navegation" aria-current="page" href="historia.html">Historia del
+                                club</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navegation" href="plantel.html">Plantel profesional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navegation" href="fixture.html">Fixture</a>
+                        </li>
 
-                    <li class="nav-item navegation">
-                        <a class="nav-link" href="contacto.html">¿Qúe es Sentimiento Azulgrana?</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="¿Qué estas buscando?"
-                        aria-label="Search">
-                    <button class="btn-outline-success" type="submit"><span class="material-symbols-outlined">
-                            search
-                        </span></button>
-                </form>
+                        <li class="nav-item">
+                            <a class="nav-link navegation" href="contacto.html">¿Qúe es Sentimiento Azulgrana?</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Qué estas buscando?"
+                            aria-label="Search">
+                        <button class="btn-outline-success iconoBusqueda" type="submit"><span
+                                class="material-symbols-outlined">
+                                search
+                            </span></button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-
-    <h6 class="mt-1 subA">Fútbol profesional</h2>
-        <h2 class="subB">Plantel</h2>
-        <h4 class="subC">Arqueros</h4>
-        <div class="row">
-            <div class=" player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in"
-                    class="img-fluid img-thumbnail" src="../img/batalla.jpg" alt="">
-                    <figcaption>17 - Augusto batalla</figcaption>
+<main class="bloquePrincipal">
+    <h6 class="mt-1 subtituloA">Fútbol profesional</h6>
+        <h2 class="subtituloB">Plantel</h2>
+        <h4 class="subtituloC">Arqueros</h4>
+        <div class="row arqueros">
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
+                    src="../img/batalla.jpg" alt="">
+                <figcaption class="namePlayer d-flex align-items-center">17 - Augusto Batalla</figcaption>
             </div>
-            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/kaleniuk.jpg" alt="">
-                <figcaption class="namePlayer">13 - Lautaro kaleniuk</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">13 - Lautaro Lopez kaleniuk</figcaption>
             </div>
-            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/clemente.jpg" alt="">
-                <figcaption class="namePlayer">25 - Mateo Clemente</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">25 - Mateo Clemente</figcaption>
             </div>
         </div>
 
-        <h4 class="mt-3 subC">Defensores</h4>
+        <h4 class="mt-3 subtituloA">Defensores</h4>
         <div class="row defensores">
 
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/gattoni.jpg" alt="Federico Gattoni">
-                <figcaption class="namePlayer">6 - Federico Gattoni</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Federico Gattoni</figcaption>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6 r"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6 r"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/calcaterra.jpg" alt="Diego Calcaterra">
-                <figcaption class="namePlayer">15 - Diego Calcaterra</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Diego Calcaterra</figcaption>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/campi.jpg" alt="Gaston Campi">
-                <figcaption class="namePlayer">22 - Gastón Campi</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Gaston Campi</figcaption>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/hernandez.jpg" alt="Gaston hernandez">
-                <figcaption class="namePlayer">23 - Gastón Hernandez</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Gaston Hernandez</figcaption>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/james.jpg" alt="Jeremias James">
-                <figcaption class="namePlayer">24 - Jeremias James</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Jeremias James</figcaption>
             </div>
 
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/flores.jpg" alt="Francisco flores">
-                <figcaption class="namePlayer">32 - Francisco flores</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Francisco Flores</figcaption>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/lujas.jpg" alt="Gonzalo Lujan">
-                <figcaption class="namePlayer">35 - Gonzalo Luján</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Gonzalo Luján</figcaption>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/silva.jpg" alt="Tomas silva">
-                <figcaption class="namePlayer">46 - Tomás Silva</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Tomas Silva</figcaption>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid img-thumbnail"
+            <div class="player col-xl-3 col-md-3 col-sm-6 col-6"><img data-aos="zoom-in" class="img-fluid fotoPlayer"
                     src="../img/herrera.jpg" alt="Ezequiel herrera">
-                <figcaption class="namePlayer">57 - Ezequiel Herrera</figcaption>
+                <figcaption class="namePlayer d-flex align-items-center">Ezequiel Herrera</figcaption>
             </div>
         </div>
+    </main>
 
 
-        <footer class="pie">
-            <h3 class="text-center text-pie">Redes oficiales del club</h3>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/SanLorenzo" target="_blank"><img
-                            class="img-fluid redes" src="../img/facebook.png" alt=""></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://instagram.com/sanlorenzo"><img class="img-fluid redes" src="../img/instagram.png" alt=""></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/sanlorenzo" target="_blank"><img
-                            class="img-fluid redes" src="../img/gorjeo.png" alt=""></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link"><img class="img-fluid redes" src="../img/youtube.png" alt=""></a>
-                </li>
-            </ul>
+    <footer class="pie">
+        <h3 class="text-center">Redes oficiales del club</h3>
+        <ul class="nav navRedes justify-content-center">
+            <li class="nav-item itemRedes">
+                <a class="nav-link" href="https://www.facebook.com/SanLorenzo" target="_blank"><img
+                        class="img-fluid logoRedes" src="../img/facebook.png" alt="logo de Facebook"></a>
+            </li>
+            <li class="nav-item itemRedes">
+                <a class="nav-link" href="https://instagram.com/sanlorenzo" target="_blank"><img class="img-fluid logoRedes"
+                        src="../img/instagram.png" alt="logo de instagram"></a>
+            </li>
+            <li class="nav-item itemRedes">
+                <a class="nav-link" href="https://twitter.com/sanlorenzo" target="_blank"><img class="img-fluid logoRedes"
+                        src="../img/gorjeo.png" alt="logo de twitter"></a>
+            </li>
+            <li class="nav-item itemRedes">
+                <a class="nav-link" href="https://youtube.com/sanlorenzo" target="_blank"><img class="img-fluid logoRedes"
+                        src="../img/youtube.png" alt="logo de youtube"></a>
+            </li>
+        </ul>
+
+    </footer>
 
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

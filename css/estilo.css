@@ -1,189 +1,202 @@
-/*FUENTE ELEGIDA*/
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap');
-
-/*RESETEO*/
-* {
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap");
+.padreNav {
+  background-color: darkblue;
+}
+.padreNav .padreDiv .navbar-brand {
+  font-family: "Fredoka One", cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.padreNav .padreDiv .navbar-brand:hover {
+  background-color: red;
+  transition: background-color 1s;
+  color: darkblue;
+}
+.padreNav .padreDiv .botonCuervo {
+  background-color: none;
+  border: none;
+}
+.padreNav .padreDiv .logoCuervo {
+  background-image: url(../img/cuervo.png);
+  color: red;
+  border: none;
+  background-color: none;
+}
+.padreNav .padreDiv .hijoDiv .navegation {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+.padreNav .padreDiv .hijoDiv .navegation:hover {
+  background-color: red;
+  transition: background-color 1s;
+  color: darkblue;
+}
+.padreNav .padreDiv .hijoDiv .iconoBusqueda {
+  color: white;
+  font-family: "Anton", sans-serif;
+  border: none;
+  background: none;
+}
+.padreNav .padreDiv .hijoDiv .iconoBusqueda:hover {
+  color: red;
+  transition: background-color 1s;
 }
 
-html {
-    font-size: 62,5;
+/*MAIN INDEX*/
+.informacionBlock .seccionA .tituloPrincipal {
+  color: red;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+.informacionBlock .seccionA .subtituloB {
+  color: darkblue;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+.informacionBlock .seccionB .subtituloB {
+  color: darkblue;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
 }
 
-/***** PLANTEL *****/
-
-.subA {
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    color: red;
+.tablaIndex .theadIndex tr .th-borde-index {
+  border: 2px solid rgb(206, 206, 206);
+  background-color: rgb(187, 187, 187);
+}
+.tablaIndex tbody tr {
+  border: 2px solid rgb(206, 206, 206);
+}
+.tablaIndex tbody tr .td-borde-index {
+  border: 2px solid rgb(206, 206, 206);
+}
+.tablaIndex tbody tr .td-borde-index .fixToday {
+  width: 50px;
+}
+.tablaIndex tbody tr .logoTabla {
+  width: 20px;
+}
+.tablaIndex tbody tr .tablaName {
+  border-bottom: 2px solid rgb(206, 206, 206);
 }
 
-.subB {
-    font-family: 'Anton', sans-serif;
-    color: darkblue;
-    text-transform: uppercase;
+/*PLANTEL*/
+.bloquePrincipal .subtituloA {
+  color: red;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+.bloquePrincipal .subtituloB {
+  color: darkblue;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+.bloquePrincipal .subtituloC {
+  color: red;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+.bloquePrincipal .arqueros .player .fotoPlayer {
+  width: 15rem;
+}
+.bloquePrincipal .arqueros .player .namePlayer {
+  font-family: "Anton", sans-serif;
+  font-size: 1.2rem;
+  color: darkblue;
+  text-transform: uppercase;
+}
+.bloquePrincipal .defensores .player .fotoPlayer {
+  width: 15rem;
+}
+.bloquePrincipal .defensores .player .namePlayer {
+  font-family: "Anton", sans-serif;
+  font-size: 1.2rem;
+  color: darkblue;
+  text-transform: uppercase;
 }
 
-.subC {
-    font-family: 'Anton', sans-serif;
-    color: red;
-    text-transform: uppercase;
+/*FIXTURE*/
+.bloquePrincipal .tablaFixture .theadFixture .trhFixture {
+  background-color: rgb(219, 219, 219);
+  border: 0.2rem rgb(231, 231, 231) solid;
+}
+.bloquePrincipal .tablaFixture .theadFixture .th-borde-fixture {
+  border: 0.2rem rgb(231, 231, 231) solid;
+}
+.bloquePrincipal .tablaFixture .tbodyFixture .escudoChico {
+  width: 1.2rem;
+}
+.bloquePrincipal .tablaFixture .tbodyFixture .trFixture {
+  border: 0.2rem rgb(231, 231, 231) solid;
+}
+.bloquePrincipal .tablaFixture .tbodyFixture .td-borde-fixture {
+  border: 0.2rem rgb(231, 231, 231) solid;
 }
 
-.img-fluid {
-    width: 200px;
-    display: inline;
-
+/*HISTORIA DEL CLUB*/
+.informacionBlock .subtituloA {
+  color: darkblue;
+}
+.informacionBlock .subtituloB {
+  color: red;
+}
+.informacionBlock .subtituloD {
+  color: darkblue;
 }
 
-/***********  ESTILO DE LA BARRA DE NAVEGACION Y DEL MENU DE HAMBURGUESA      **************/
-.navbar-brand {
-    font-family: 'Fredoka One', cursive;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-.navbar-brand :hover {
-    background-color: red;
-    transition: background-color 1s;
-    color: darkblue;
-}
-
-
-
-.navegation :hover {
-    background-color: red;
-    transition: background-color 1s;
-    color: darkblue;
-}
-
-
-.nav-link {
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    color: white;
-}
-
-.navbar {
-    background-color: darkblue;
-}
-
-/**************  ESTILO DEL FOOTER     ********************/
-
-.pie {
-    background-color: darkblue;
-}
-
-.redes {
-    width: 30px;
-}
-
-.text-pie {
-    color: white;
-}
-
-.btn-outline-success {
-    color: white;
-    font-family: 'Anton', sans-serif;
-    border: none;
-    background: none;
-}
-
-.btn-outline-success:hover {
-    color: red;
-    transition: background-color 1s;
-}
-
-.navbar-toggler {
-    background-color: none;
-    border: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url(../img/cuervo.png);
-    color: red;
-    border: none;
-    background-color: none;
-}
-
-/*********** ESTILO DE FIXTURE(INCOMPLETO)   *********************/
-
-.cronogram {
-    margin: 0;
-    padding: 0;
-}
-
-.escudoFix {
-    width: 40px;
-
-}
-
-/*********** CONTACTO.HTML = ESTILO DEL FORMULARIO ****************/
-
-.ms-5 {
-    font-family: 'Fredoka One', cursive;
-    color: darkblue;
-}
-
-.cajaTexto {
-    width: 15px;
-}
-
-input {
-    display: inline-block;
-}
-
-label {
-    display: inline-block
-}
-
-.botonIcono {
-    width: 4rem;
-    text-decoration: none;
-    color: white;
-    background-color: darkblue;
-    border: none;
-}
-
-.botonIcono:hover {
-    background-color: red;
-    color: blue;
-    width: 3.8rem;
-    transition: all 0.5s;
-}
-
-
-.borrarBoton {
-    width: 2.5rem;
-
-}
-
-.encabezadoContact {
-    font-size: 1.2rem;
-}
-
+/*CONTACTO*/
 .formularioCuervo {
-    border: grey solid 2px;
+  border: 0.5rem solid darkblue;
+}
+.formularioCuervo .seccionFormulario .botonIcono {
+  width: 4rem;
+  text-decoration: none;
+  color: white;
+  background-color: darkblue;
+  border: none;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.formularioCuervo .seccionFormulario .botonIcono:active {
+  transform: scale(0.9);
+}
+.formularioCuervo .seccionFormulario .botonIcono:active:hover {
+  background-color: red;
+  color: blue;
+  transition: all 0.5s;
 }
 
-/***********    MD PARA QUITAR MAPA DEL MAIN, PARA HACERLO RESPONSIVE.        **********************/
-@media (max-width:768px) {
-    .mapa {
-        display: none;
-    }
-
-    .formulario {
-        display: flex;
-        justify-content: center;
-    }
-
-    .cuadroTexto {
-        width: 100%;
-    }
+/*FOOTER*/
+.pie {
+  background-color: darkblue;
 }
+.pie h3 {
+  color: white;
+}
+.pie .navRedes .itemRedes .logoRedes {
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .item {
+    display: none;
+  }
+  .itemDos {
+    display: none;
+  }
+  .mapa {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .itemTres {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
