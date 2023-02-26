@@ -49,40 +49,72 @@
 }
 
 /*MAIN INDEX*/
-.informacionBlock .seccionA .tituloPrincipal {
+.informacionBlock .subtituloA {
+  font-family: "Fredoka One", cursive;
+}
+.informacionBlock .seccionGoleadores .contenedorGoles tbody .logoTabla {
+  width: 15px;
+}
+
+.informacionBlock .seccionDatos h2 {
+  color: darkblue;
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+}
+.informacionBlock .seccionDatos .listaDatos li {
+  list-style-type: none;
+}
+.informacionBlock .seccionDatos .listaDatos li .iconoDatos {
+  width: 2.5rem;
+}
+.informacionBlock .seccionDatos .listaDatos .textoDatos {
+  font-size: 1.3rem;
+  color: darkblue;
+  font-family: "Fredoka One", cursive;
+}
+.informacionBlock .seccionDatos .listaDatos .datoNumerico {
+  background-color: darkblue;
+  border-radius: 50px;
+  color: white;
+  padding: 0;
+}
+.informacionBlock .fixture .imgFixture {
+  width: 5rem;
+}
+.informacionBlock .textFixture .diaPartido .logoLiga {
+  width: 1.5rem;
+}
+.informacionBlock .nameFixture {
+  background-color: darkblue;
+  color: white;
+  text-transform: uppercase;
+}
+.informacionBlock .nameFixturedos {
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  transform: rotate(5deg);
+}
+
+.seccionA .tituloPrincipal {
   color: red;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
 }
-.informacionBlock .seccionA .subtituloB {
-  color: darkblue;
-  font-family: "Anton", sans-serif;
-  text-transform: uppercase;
-}
-.informacionBlock .seccionB .subtituloB {
+.seccionA .subtituloB {
   color: darkblue;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
 }
 
-.tablaIndex .theadIndex tr .th-borde-index {
-  border: 2px solid rgb(206, 206, 206);
-  background-color: rgb(187, 187, 187);
+.seccionB .subtituloB {
+  color: darkblue;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
 }
-.tablaIndex tbody tr {
-  border: 2px solid rgb(206, 206, 206);
-}
-.tablaIndex tbody tr .td-borde-index {
-  border: 2px solid rgb(206, 206, 206);
-}
-.tablaIndex tbody tr .td-borde-index .fixToday {
-  width: 50px;
-}
-.tablaIndex tbody tr .logoTabla {
-  width: 20px;
-}
-.tablaIndex tbody tr .tablaName {
-  border-bottom: 2px solid rgb(206, 206, 206);
+
+.tabla .seccionCalendario .tablaIndex tbody .logoTabla {
+  width: 1rem;
 }
 
 /*PLANTEL*/
@@ -101,14 +133,21 @@
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
 }
+.bloquePrincipal .arqueros {
+  margin: 0;
+  padding: 0;
+}
 .bloquePrincipal .arqueros .player .fotoPlayer {
-  width: 15rem;
+  max-width: 100%;
+  height: auto;
 }
 .bloquePrincipal .arqueros .player .namePlayer {
   font-family: "Anton", sans-serif;
   font-size: 1.2rem;
   color: darkblue;
   text-transform: uppercase;
+  color: darkblue;
+  background-color: white;
 }
 .bloquePrincipal .defensores .player .fotoPlayer {
   width: 15rem;
@@ -120,22 +159,26 @@
   text-transform: uppercase;
 }
 
-/*FIXTURE*/
-.bloquePrincipal .tablaFixture .theadFixture .trhFixture {
-  background-color: rgb(219, 219, 219);
-  border: 0.2rem rgb(231, 231, 231) solid;
+.informacionBlock {
+  background-color: white;
 }
-.bloquePrincipal .tablaFixture .theadFixture .th-borde-fixture {
-  border: 0.2rem rgb(231, 231, 231) solid;
+.informacionBlock .fixture {
+  border-right: 1px rgb(189, 189, 189) solid;
+}
+
+/*FIXTURE*/
+.bloquePrincipal .subA {
+  color: darkblue;
+}
+.bloquePrincipal .subB {
+  color: red;
+  text-transform: uppercase;
+}
+.bloquePrincipal .subC {
+  color: darkblue;
 }
 .bloquePrincipal .tablaFixture .tbodyFixture .escudoChico {
-  width: 1.2rem;
-}
-.bloquePrincipal .tablaFixture .tbodyFixture .trFixture {
-  border: 0.2rem rgb(231, 231, 231) solid;
-}
-.bloquePrincipal .tablaFixture .tbodyFixture .td-borde-fixture {
-  border: 0.2rem rgb(231, 231, 231) solid;
+  width: 20px;
 }
 
 /*HISTORIA DEL CLUB*/
@@ -195,6 +238,12 @@
 }
 @media (max-width: 576px) {
   .itemTres {
+    display: none;
+  }
+  .itemGol {
+    display: none;
+  }
+  .tablaName {
     display: none;
   }
 }
