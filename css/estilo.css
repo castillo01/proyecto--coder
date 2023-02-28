@@ -195,27 +195,33 @@
 /*FIXTURE*/
 .bloquePrincipal .subA {
   color: darkblue;
+  font-family: "Anton", sans-serif;
 }
 .bloquePrincipal .subB {
   color: red;
   text-transform: uppercase;
+  font-family: "Anton", sans-serif;
 }
 .bloquePrincipal .subC {
   color: darkblue;
+  font-family: "Anton", sans-serif;
 }
 .bloquePrincipal .tablaFixture .tbodyFixture .escudoChico {
   width: 20px;
 }
 
 /*HISTORIA DEL CLUB*/
-.informacionBlock .subtituloA {
+.informacionBlock .subtituloD {
   color: darkblue;
+  font-family: "Anton", sans-serif;
 }
 .informacionBlock .subtituloB {
   color: red;
+  font-family: "Anton", sans-serif;
 }
 .informacionBlock .subtituloD {
   color: darkblue;
+  font-family: "Anton", sans-serif;
 }
 
 /*CONTACTO*/
