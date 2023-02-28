@@ -3,6 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Lobster&display=swap");
+.pie {
+  background-color: darkblue;
+}
+.pie h3 {
+  color: white;
+}
+.pie .navRedes .itemRedes .logoRedes {
+  width: 40px;
+}
+
 .padreNav {
   background-color: darkblue;
 }
@@ -49,8 +59,31 @@
 }
 
 /*MAIN INDEX*/
+.informacionBlock .encabezado-a {
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  color: darkblue;
+}
 .informacionBlock .subtituloA {
   font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  color: white;
+  text-transform: uppercase;
+  color: white;
+}
+.informacionBlock .subtituloA:hover {
+  background-color: red;
+  transition: background-color 1s;
+  color: darkblue;
+}
+.informacionBlock .subtituloA:hover {
+  background-color: red;
+  transition: background-color 1s;
+  color: darkblue;
+}
+.informacionBlock .subtituloB {
+  font-family: "Fredoka One", cursive;
+  color: darkblue;
 }
 .informacionBlock .seccionGoleadores .contenedorGoles tbody .logoTabla {
   width: 15px;
@@ -159,13 +192,6 @@
   text-transform: uppercase;
 }
 
-.informacionBlock {
-  background-color: white;
-}
-.informacionBlock .fixture {
-  border-right: 1px rgb(189, 189, 189) solid;
-}
-
 /*FIXTURE*/
 .bloquePrincipal .subA {
   color: darkblue;
@@ -214,17 +240,6 @@
   transition: all 0.5s;
 }
 
-/*FOOTER*/
-.pie {
-  background-color: darkblue;
-}
-.pie h3 {
-  color: white;
-}
-.pie .navRedes .itemRedes .logoRedes {
-  width: 40px;
-}
-
 @media (max-width: 768px) {
   .item {
     display: none;
@@ -245,6 +260,11 @@
   }
   .tablaName {
     display: none;
+  }
+}
+@media (max-width: 992px) {
+  .fixture {
+    border-right: none;
   }
 }
 

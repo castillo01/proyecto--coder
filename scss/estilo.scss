@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables", "footer", "header";
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -7,69 +7,39 @@
 
 
 
-.padreNav {
-    background-color: darkblue;
-
-    .padreDiv {
-        .navbar-brand {
-            font-family: 'Fredoka One', cursive;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: white;
-
-            &:hover {
-                background-color: $colorA;
-                transition: background-color 1s;
-                color: $colorB;
-            }
-        }
-
-        .botonCuervo {
-            background-color: none;
-            border: none;
-        }
-
-        .logoCuervo {
-            background-image: url(../img/cuervo.png);
-            color: $colorA;
-            border: none;
-            background-color: none;
-        }
-
-        .hijoDiv {
-            .navegation {
-                font-family: 'Anton', sans-serif;
-                text-transform: uppercase;
-                color: white;
-
-                &:hover {
-                    background-color: $colorA;
-                    transition: background-color 1s;
-                    color: $colorB;
-                }
-            }
-
-            .iconoBusqueda {
-                color: white;
-                font-family: 'Anton', sans-serif;
-                border: none;
-                background: none;
-
-                &:hover {
-                    color: $colorA;
-                    transition: background-color 1s;
-                }
-            }
-        }
-
-    }
-}
-
 /*MAIN INDEX*/
 
 .informacionBlock {
+    .encabezado-a {
+        font-family: 'Fredoka One', cursive;
+        text-transform: uppercase;
+        color: $colorB;
+    }
+
     .subtituloA {
         font-family: 'Fredoka One', cursive;
+        text-transform: uppercase;
+        color: white;
+
+        &:hover {
+            background-color: $colorA;
+            transition: background-color 1s;
+            color: $colorB;
+        }
+
+        text-transform: uppercase;
+        color: white;
+
+        &:hover {
+            background-color: $colorA;
+            transition: background-color 1s;
+            color: $colorB;
+        }
+    }
+
+    .subtituloB {
+        font-family: 'Fredoka One', cursive;
+        color: $colorB;
     }
 
 
@@ -186,8 +156,6 @@
     }
 }
 
-
-
 /*PLANTEL*/
 
 .bloquePrincipal {
@@ -248,14 +216,6 @@
     }
 }
 
-.informacionBlock {
-    background-color: white;
-
-    .fixture {
-        border-right: 1px rgb(189, 189, 189) solid;
-    }
-}
-
 /*FIXTURE*/
 
 .bloquePrincipal {
@@ -271,6 +231,7 @@
     .subC {
         color: $colorB;
     }
+
     .tablaFixture {
         .tbodyFixture {
             .escudoChico {
@@ -326,24 +287,6 @@
     }
 }
 
-/*FOOTER*/
-
-.pie {
-    
-    background-color: $colorB;
-
-    h3 {
-        color: white;
-    }
-
-    .navRedes {
-        .itemRedes {
-            .logoRedes {
-                width: 40px;
-            }
-        }
-    }
-}
 
 @media (max-width:$medium) {
     .item {
@@ -370,5 +313,11 @@
 
     .tablaName {
         display: none;
+    }
+}
+
+@media (max-width:$large) {
+    .fixture {
+        border-right: none;
     }
 }

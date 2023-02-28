@@ -1,0 +1,57 @@
+.padreNav {
+    background-color: darkblue;
+
+    .padreDiv {
+        .navbar-brand {
+            font-family: 'Fredoka One', cursive;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+
+            &:hover {
+                background-color: $colorA;
+                transition: background-color 1s;
+                color: $colorB;
+            }
+        }
+
+        .botonCuervo {
+            background-color: none;
+            border: none;
+        }
+
+        .logoCuervo {
+            background-image: url(../img/cuervo.png);
+            color: $colorA;
+            border: none;
+            background-color: none;
+        }
+
+        .hijoDiv {
+            .navegation {
+                font-family: 'Anton', sans-serif;
+                text-transform: uppercase;
+                color: white;
+
+                &:hover {
+                    background-color: $colorA;
+                    transition: background-color 1s;
+                    color: $colorB;
+                }
+            }
+
+            .iconoBusqueda {
+                color: white;
+                font-family: 'Anton', sans-serif;
+                border: none;
+                background: none;
+
+                &:hover {
+                    color: $colorA;
+                    transition: background-color 1s;
+                }
+            }
+        }
+
+    }
+}
